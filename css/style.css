@@ -1,0 +1,504 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #000;
+  font-weight: 400;
+}
+.main {
+  margin-top: 110px;
+}
+/* Header */
+
+.header {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0px 1px 10px 2px #161f2c4a;
+}
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+}
+.header .navbar .navbar-brand {
+  width: 220px;
+  max-width: 220px;
+  height: 80px;
+}
+.header .navbar .navbar-brand img {
+  max-width: 100%;
+  height: auto;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.navbar-nav .nav-item {
+  display: inline-block;
+}
+.navbar-nav .nav-item .nav-link {
+  display: block;
+  padding: 0.2rem 1rem;
+  font-size: 1rem;
+  color: #000;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.navbar-nav .nav-item:last-child .nav-link {
+  padding-right: 0;
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link.active,
+.navbar-nav .nav-item .nav-link:focus,
+.navbar-nav .nav-item .nav-link:active {
+  color: #275eab;
+}
+.head-btns {
+  display: none;
+}
+/* Footer */
+
+footer {
+  padding: 6vw 4vw;
+  background-image: url("https://www.alliedmarketresearch.com/assets/images/footer-bg.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #000000e0;
+  height: 100%;
+  width: 100%;
+}
+footer .fott-container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+footer .fott-container ul {
+  text-decoration: none;
+  padding: 0;
+}
+footer .fott-container ul li {
+  text-decoration: none;
+  display: inline-block;
+}
+footer .fott-container ul li a {
+  display: block;
+  margin: 0.5rem 0.75rem;
+  padding: 0.5rem 0rem;
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+footer .fott-container ul li a:hover,
+footer .fott-container ul li a.active,
+footer .fott-container ul li a:focus,
+footer .fott-container ul li a:active {
+  color: #f6c621;
+}
+footer .fott-container ul.social li a {
+  font-size: 2rem;
+}
+footer .fott-container p {
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: 300;
+  margin-top: 2rem;
+}
+/* Home page hero section */
+.home-hero {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  background-image: url(/images/banner_image.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.home-hero .hero-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: lime; */
+  width: 90%;
+}
+
+.hero-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+.hero-card .hero-video-box {
+  box-shadow: 0px 0px 9px -3px #fff;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+.hero-card .hero-video-box iframe {
+  border-radius: 0.5rem;
+}
+.hero-card h1 {
+  font-size: 6rem;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.hero-card h1 span {
+  color: #23c0e3;
+  font-weight: 400;
+}
+
+/* Home About Section */
+.home-about {
+  padding: 6vw 4vw;
+}
+.home-about .about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.home-about .about-container .about-detail {
+  width: 50%;
+}
+
+.home-about .about-container .about-detail p {
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #303030;
+  text-align: start;
+  margin-bottom: 2rem;
+}
+
+/* Home Blog Section */
+.home-blog-sec {
+  padding: 3vw 4vw 6vw;
+}
+
+.home-blog-sec .home-blogs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3.5rem;
+}
+.home-blog-sec .home-blogs .single-blog {
+  width: 47%;
+}
+.home-blog-sec .home-blogs .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1.5rem;
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 7px -3px #23c0e3;
+  border-radius: 0.5rem;
+}
+.home-blog-sec .home-blogs .card:hover {
+  box-shadow: 0px 0px 15px 0px #275eab;
+}
+.home-blog-sec .home-blogs .card img {
+  max-width: 50%;
+}
+.home-blog-sec .home-blogs .card h4 {
+  margin-bottom: 0.75rem;
+  font-size: 18px;
+  font-weight: 700;
+  color: #275eab;
+  text-transform: capitalize;
+  text-align: start;
+}
+.home-blog-sec .home-blogs .card p {
+  font-size: 15px;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #303030;
+  text-align: left;
+  margin-bottom: 0.75rem;
+}
+.home-blog-sec .home-blogs .card .card-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.75rem;
+}
+.home-blog-sec .home-blogs .card .card-time a {
+  text-transform: capitalize;
+  color: #dc3b26;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.home-blog-sec .home-blogs .card .card-time a:hover {
+  color: #a01e0d;
+}
+
+.home-blog-sec .home-blogs .card .card-time p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.7;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #eb8924;
+  text-align: right;
+  border: 1px solid #275eab;
+  padding: 0px 0.75rem;
+  border-radius: 30px;
+}
+.home-blog-sec .blog-pagination {
+  background-color: #23c0e38a;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-blog-sec .blog-pagination a {
+  margin: 0 5px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.25rem 0;
+  height: 30px;
+  width: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #275eab;
+  border-radius: 50%;
+  color: #fff;
+}
+.home-blog-sec .blog-pagination a:hover {
+  background-color: #eb8924;
+}
+.home-blog-sec .blog-pagination a:first-child,
+.home-blog-sec .blog-pagination a:last-child {
+  width: auto;
+  background-color: transparent;
+  color: #275eab;
+}
+.home-blog-sec .blog-pagination p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #275eab;
+}
+.home-blog-sec.home-recent-heighlight .home-blogs {
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.home-blog-sec.home-recent-heighlight .home-blogs .single-blog {
+  width: 19%;
+}
+
+.home-blog-sec.home-recent-heighlight .home-blogs .card {
+  display: block;
+  justify-content: space-between;
+  align-items: start;
+  gap: 0.5rem;
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 7px -3px #23c0e3;
+  border-radius: 0.5rem;
+}
+.home-blog-sec.home-recent-heighlight .home-blogs .card img {
+  max-width: 100%;
+}
+
+/* Media Querys */
+
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 1399.98px) {
+}
+@media (max-width: 1024.98px) {
+  .hero-card {
+    gap: 2rem;
+  }
+  .hero-card h1 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+  }
+
+  .head-btns {
+    display: inline-block;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .head-btns-close {
+    display: inline-block;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    color: #fff;
+  }
+  .navbar-collapse {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .navbar-collapse .navbar-nav,
+  .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+    padding: 0.7em 1rem;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+
+  .navbar-collapse a:hover {
+    color: #f1f1f1;
+  }
+
+  .navbar-collapse .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .navbar-collapse {
+      padding-top: 15px;
+    }
+    .navbar-collapse a {
+      font-size: 18px;
+    }
+  }
+  .hero-card {
+    display: block;
+  }
+  .hero-card h1 {
+    margin-top: 1.5rem;
+    font-size: 3rem;
+  }
+  .home-about .about-container {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  .home-about .about-container .about-detail {
+    width: 100%;
+  }
+  .home-blog-sec.home-recent-heighlight .home-blogs {
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .home-blog-sec.home-recent-heighlight .home-blogs .single-blog {
+    width: 49%;
+  }
+  .home-blog-sec .home-blogs .card h4 {
+    margin-top: 0.75rem;
+  }
+  .home-blog-sec .home-blogs .single-blog {
+    width: 100%;
+  }
+  .home-blog-sec .home-blogs .card img {
+    max-width: 30%;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero-card {
+    display: block;
+  }
+  .hero-card h1 {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 567.98px) {
+  .title {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  .home-blog-sec.home-recent-heighlight .home-blogs .single-blog {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .home-blog-sec .home-blogs {
+    gap: 1.5rem;
+  }
+  .home-blog-sec .home-blogs .card {
+    display: block;
+  }
+  .home-blog-sec .home-blogs .card img {
+    max-width: 100%;
+  }
+  .home-blog-sec .blog-pagination {
+    display: block;
+  }
+  .home-blog-sec .blog-pagination a {
+    margin: 0 0px;
+  }
+  .home-blog-sec .blog-pagination p {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  footer .fott-container ul li a {
+    display: block;
+    margin: 0.1rem 0.35rem;
+  }
+  footer .fott-container ul.social li a {
+    font-size: 1.75rem;
+  }
+}

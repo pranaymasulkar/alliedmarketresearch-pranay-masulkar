@@ -1,0 +1,49 @@
+/* 
+  --- Colors From Logo --- 
+
+  color: #23c0e3;
+  color: #dc3b26;
+  color: #eb8924;
+  color: #f6c621;
+  color: #275eab; 
+  
+*/
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn-primary {
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  border: 1px solid #275eab;
+  background-color: #275eab;
+  font-weight: 800;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.title {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #275eab;
+  text-transform: capitalize;
+  text-align: start;
+  position: relative;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -5px;
+  height: 5px;
+  width: 60px;
+  background-color: #dc3b26;
+  border-radius: 15px;
+}
